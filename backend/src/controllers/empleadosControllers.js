@@ -7,7 +7,7 @@ const Empleado = require('../models/Empleado')
     ✔️ READ ALL
     ✔️ READ ONE
     ✔️ UPDATE
-    - DELETE
+    ✔️ DELETE
 */
 
 
