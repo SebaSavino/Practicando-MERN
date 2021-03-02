@@ -1,0 +1,23 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+/* Mis colores bellos */
+$blanco: #f6f0ec;
+$gris: #e3ddca;
+$amarillo: #ffa333;
+$celeste: #3a808a;
+$azul: #284d5b; // No estoy seguro de que sean esos colores soy medio tonto xd
+
+$body-bg: $gris;
+
+$custom-colors: (
+    "blanco": $blanco,
+    "gris": $gris,
+    "amarillo": $amarillo,
+    "celeste": $celeste,
+    "azul": $azul,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
