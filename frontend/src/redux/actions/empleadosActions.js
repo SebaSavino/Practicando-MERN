@@ -127,7 +127,7 @@ const agregarEmpleadoCompletado = empleado => ({
 export const editarEmpeado = empleado => async dispatch => {
     dispatch(editarEmpleadoPendiente())
     try {
-        const respuesta = await backend.put(`empleados/${empleado.id}`, empleado)
+        await backend.put(`empleados/${empleado.id}`, empleado)
         dispatch(editarEmpleadoCompletado(empleado))
         Notificacion.mostrar(
             Notificacion.tipos.EXITO,

@@ -62,7 +62,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 esperando: false,
-                empleados: [...state.empleados, action.payload]
+                empleados: [action.payload, ...state.empleados]
             }
         // Editar empleado....
         case OBTENER_EMPLEADO_EDITAR:
